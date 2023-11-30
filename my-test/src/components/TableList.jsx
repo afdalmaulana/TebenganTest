@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Table, Tag } from "antd";
+import { Space, Table, Tag } from "antd";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
 import { FaMobileScreenButton } from "react-icons/fa6";
 
@@ -11,38 +11,74 @@ const columns = [
       <div style={{ textAlign: "left" }}>
         {record.key === 1 ? (
           <>
-            <div>{record.ID[0]}</div>
-            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
-            <div>{record.ID[2]}</div>
-            <div style={{ fontWeight: "bold" }}>{record.ID[3]}</div>
-            <HiMiniComputerDesktop />
-            <div style={{ fontWeight: "lighter" }}>{record.ID[4]}</div>
-            <div style={{ fontWeight: "lighter" }}>{record.ID[5]}</div>
+            <Space direction="vertical" size={10}>
+              <div>
+                <div>{record.ID[0]}</div>
+                <div style={{ lineHeight: "10px", fontWeight: "bold" }}>
+                  {record.ID[1]}
+                </div>
+              </div>
+              <div>
+                <div>{record.ID[2]}</div>
+                <div style={{ lineHeight: "10px", fontWeight: "bold" }}>
+                  {record.ID[3]}
+                </div>
+              </div>
+              <HiMiniComputerDesktop size={"1.6em"} />
+              <div style={{ color: "gray" }}>{record.ID[4]}</div>
+              <div style={{ color: "gray" }}>{record.ID[5]}</div>
+            </Space>
           </>
         ) : record.key === 2 ? (
           <>
-            <div>{record.ID[0]}</div>
-            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
-            <FaMobileScreenButton />
-            <div style={{ fontWeight: "lighter" }}>{record.ID[2]}</div>
+            <Space direction="vertical" size={10}>
+              <div>
+                <div>{record.ID[0]}</div>
+                <div style={{ lineHeight: "10px", fontWeight: "bold" }}>
+                  {record.ID[1]}
+                </div>
+              </div>
+              <FaMobileScreenButton size={"1.6em"} />
+              <div style={{ color: "gray" }}>{record.ID[2]}</div>
+            </Space>
           </>
         ) : record.key === 3 ? (
           <>
-            <div>{record.ID[0]}</div>
-            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
-            <div>{record.ID[2]}</div>
-            <div style={{ fontWeight: "bold" }}>{record.ID[3]}</div>
-            <FaMobileScreenButton />
-            <div style={{ fontWeight: "lighter" }}>{record.ID[4]}</div>
+            <Space direction="vertical" size={10}>
+              <div>
+                <div>{record.ID[0]}</div>
+                <div style={{ lineHeight: "10px", fontWeight: "bold" }}>
+                  {record.ID[1]}
+                </div>
+              </div>
+              <div>
+                <div>{record.ID[2]}</div>
+                <div style={{ lineHeight: "10px", fontWeight: "bold" }}>
+                  {record.ID[3]}
+                </div>
+              </div>
+              <FaMobileScreenButton size={"1.6em"} />
+              <div style={{ color: "gray" }}>{record.ID[4]}</div>
+            </Space>
           </>
         ) : record.key === 4 ? (
           <>
-            <div>{record.ID[0]}</div>
-            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
-            <div>{record.ID[2]}</div>
-            <div style={{ fontWeight: "bold" }}>{record.ID[3]}</div>
-            <HiMiniComputerDesktop />
-            <div style={{ fontWeight: "lighter" }}>{record.ID[4]}</div>
+            <Space direction="vertical" size={10}>
+              <div>
+                <div>{record.ID[0]}</div>
+                <div style={{ lineHeight: "10px", fontWeight: "bold" }}>
+                  {record.ID[1]}
+                </div>
+              </div>
+              <div>
+                <div>{record.ID[2]}</div>
+                <div style={{ lineHeight: "10px", fontWeight: "bold" }}>
+                  {record.ID[3]}
+                </div>
+              </div>
+              <HiMiniComputerDesktop size={"1.6em"} />
+              <div style={{ color: "gray" }}>{record.ID[4]}</div>
+            </Space>
           </>
         ) : (
           <div>{record.ID}</div>
@@ -92,14 +128,14 @@ const columns = [
     title: "Status",
     dataIndex: "Status",
     render: (text, record) => (
-      <div style={{ textAlign: "left" }}>
+      <div style={{ textAlign: "left", justifyItems: "center" }}>
         {record.key === 1 ? (
           <>
             <Tag color="blue" style={{ borderRadius: "10px" }}>
               {record.Status[0]}
             </Tag>
             <div>{record.Status[1]}</div>
-            <div>{record.Status[2]}</div>
+            <div style={{ color: "gray" }}>{record.Status[2]}</div>
             <div>{record.Status[3]}</div>
           </>
         ) : record.key === 2 ? (
@@ -108,42 +144,79 @@ const columns = [
               {record.Status[0]}
             </Tag>
             <div>{record.Status[1]}</div>
-            <div>{record.Status[2]}</div>
+            <div style={{ color: "gray" }}>{record.Status[2]}</div>
             <div>{record.Status[3]}</div>
           </>
         ) : record.key === 3 ? (
           <>
-            <div>{record.ID[0]}</div>
-            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
-            <div>{record.ID[2]}</div>
-            <div style={{ fontWeight: "bold" }}>{record.ID[3]}</div>
-            <FaMobileScreenButton />
-            <div style={{ fontWeight: "lighter" }}>{record.ID[4]}</div>
+            <Tag
+              style={{
+                borderRadius: "10px",
+                borderColor: "black",
+                color: "black",
+              }}
+            >
+              {record.Status[0]}
+            </Tag>
+            <div>{record.Status[1]}</div>
+            <div style={{ color: "gray" }}>{record.Status[2]}</div>
+            <div>{record.Status[3]}</div>
+          </>
+        ) : record.key === 4 ? (
+          <>
+            <Space direction="vertical" size={6}>
+              <Tag
+                style={{
+                  borderRadius: "10px",
+                  borderColor: "gray",
+                  color: "gray",
+                }}
+              >
+                {record.Status[0]}
+              </Tag>
+              <div>{record.Status[1]}</div>
+              <div style={{ color: "gray" }}>{record.Status[2]}</div>
+              <div>{record.Status[3]}</div>
+            </Space>
           </>
         ) : (
-          <div>{record.ID}</div>
+          <div>{record.Status}</div>
         )}
       </div>
     ),
 
-    width: "20%",
+    width: "15%",
   },
   {
     title: "Name",
-    dataIndex: "Status",
+    dataIndex: "Name",
     width: "20%",
   },
   {
-    title: "Name",
-    dataIndex: "Status",
+    title: "Contact",
+    dataIndex: "Contact",
     width: "20%",
   },
   {
-    title: "Name",
-    dataIndex: "Status",
+    title: "Address",
+    dataIndex: "Address",
     width: "20%",
   },
-  // Kolom lainnya
+  {
+    title: "Trip",
+    dataIndex: "Trip",
+    width: "20%",
+  },
+  {
+    title: "Voucher",
+    dataIndex: "Voucher",
+    width: "20%",
+  },
+  {
+    title: "Action",
+    dataIndex: "Action",
+    width: "20%",
+  },
 ];
 
 const data = [
@@ -163,7 +236,7 @@ const data = [
   {
     key: 2,
     ID: ["User ID", "456", "Date created 9 Jun 2022"],
-    Status: ["Active", "1 Day Ago", "Last Booking", "-"],
+    Status: ["Active", "1 day ago", "Last Booking 2 May 2022"],
     // Informasi lainnya
   },
   {
@@ -175,7 +248,7 @@ const data = [
       "BAS-51243",
       "Date created 9 Jun 2022",
     ],
-    Status: 26,
+    Status: ["Recent", "56 days ago", "Last Booking 9 June 2022"],
     // Informasi lainnya
   },
   {
@@ -187,7 +260,7 @@ const data = [
       "BAS-51243",
       "Date created 9 Jun 2022",
     ],
-    Status: 26,
+    Status: ["Inactive", "125 days ago", "Last Booking 2 May 2022"],
     // Informasi lainnya
   },
   // Data lainnya
@@ -210,7 +283,15 @@ const TableList = () => {
   };
 
   return (
-    <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+    <Table
+      rowSelection={rowSelection}
+      columns={columns}
+      dataSource={data}
+      //   scroll={{
+      //     y: "500px",
+      //   }}
+      pagination={false}
+    />
   );
 };
 

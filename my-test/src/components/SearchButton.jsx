@@ -44,7 +44,7 @@ export default function SearchButton() {
             marginLeft: 10,
             marginBottom: "10px",
             background: "#e8f2ff",
-            color: "#0766AD",
+            color: "#1c8af5",
             fontWeight: "bold",
           }}
         >

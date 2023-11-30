@@ -30,7 +30,7 @@ export default function InfoList() {
           }}
         >
           <Text style={{ fontWeight: "bold", fontSize: "22px" }}>396</Text>
-          <Text>Total Users</Text>
+          <Text>Active Users</Text>
         </div>
         <div
           style={{
@@ -43,7 +43,7 @@ export default function InfoList() {
           }}
         >
           <Text style={{ fontWeight: "bold", fontSize: "22px" }}>123</Text>
-          <Text>Total Users</Text>
+          <Text>Recent Users</Text>
         </div>
         <div
           style={{
@@ -56,7 +56,7 @@ export default function InfoList() {
           }}
         >
           <Text style={{ fontWeight: "bold", fontSize: "22px" }}>60</Text>
-          <Text>Total Users</Text>
+          <Text>Inactive Users</Text>
         </div>
         <div
           style={{
@@ -69,10 +69,18 @@ export default function InfoList() {
           }}
         >
           <Text style={{ fontWeight: "bold", fontSize: "22px" }}>60</Text>
-          <Text>Total Users</Text>
+          <Text>Lead Users</Text>
         </div>
         <div style={{ marginLeft: 320 }}>
-          <Button type="primary" ghost icon={<PlusOutlined />}>
+          <Button
+            style={{
+              background: "#e8f2ff",
+              color: "#1c8af5",
+              fontWeight: "bold",
+            }}
+            ghost
+            icon={<PlusOutlined />}
+          >
             Add New User
           </Button>
         </div>
