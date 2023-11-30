@@ -12,7 +12,7 @@ export default function Contents() {
       <div
         style={{
           width: "100%",
-          height: "100vh",
+          height: "900px",
           background: "white",
           borderRadius: "20px",
           marginTop: 10,

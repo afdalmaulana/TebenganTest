@@ -1,17 +1,53 @@
 import React, { useState } from "react";
+import { Table, Tag } from "antd";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
-import { Table } from "antd";
+import { FaMobileScreenButton } from "react-icons/fa6";
+
 const columns = [
   {
     title: "ID",
     dataIndex: "ID",
-    render: (_, record) => (
-      <>
-        <div>User ID </div>
-        <div style={{ fontWeight: "bold" }}>457 </div>
-        <div>Employee ID</div>
-        <div style={{ fontWeight: "bold" }}>BAS-51243</div>
-      </>
+    render: (text, record) => (
+      <div style={{ textAlign: "left" }}>
+        {record.key === 1 ? (
+          <>
+            <div>{record.ID[0]}</div>
+            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
+            <div>{record.ID[2]}</div>
+            <div style={{ fontWeight: "bold" }}>{record.ID[3]}</div>
+            <HiMiniComputerDesktop />
+            <div style={{ fontWeight: "lighter" }}>{record.ID[4]}</div>
+            <div style={{ fontWeight: "lighter" }}>{record.ID[5]}</div>
+          </>
+        ) : record.key === 2 ? (
+          <>
+            <div>{record.ID[0]}</div>
+            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
+            <FaMobileScreenButton />
+            <div style={{ fontWeight: "lighter" }}>{record.ID[2]}</div>
+          </>
+        ) : record.key === 3 ? (
+          <>
+            <div>{record.ID[0]}</div>
+            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
+            <div>{record.ID[2]}</div>
+            <div style={{ fontWeight: "bold" }}>{record.ID[3]}</div>
+            <FaMobileScreenButton />
+            <div style={{ fontWeight: "lighter" }}>{record.ID[4]}</div>
+          </>
+        ) : record.key === 4 ? (
+          <>
+            <div>{record.ID[0]}</div>
+            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
+            <div>{record.ID[2]}</div>
+            <div style={{ fontWeight: "bold" }}>{record.ID[3]}</div>
+            <HiMiniComputerDesktop />
+            <div style={{ fontWeight: "lighter" }}>{record.ID[4]}</div>
+          </>
+        ) : (
+          <div>{record.ID}</div>
+        )}
+      </div>
     ),
     filters: [
       {
@@ -55,256 +91,127 @@ const columns = [
   {
     title: "Status",
     dataIndex: "Status",
-    filters: [
-      {
-        text: "Joe",
-        value: "Joe",
-      },
-      {
-        text: "Category 1",
-        value: "Category 1",
-        children: [
-          {
-            text: "Yellow",
-            value: "Yellow",
-          },
-          {
-            text: "Pink",
-            value: "Pink",
-          },
-        ],
-      },
-      {
-        text: "Category 2",
-        value: "Category 2",
-        children: [
-          {
-            text: "Green",
-            value: "Green",
-          },
-          {
-            text: "Black",
-            value: "Black",
-          },
-        ],
-      },
-    ],
-    filterMode: "tree",
-    filterSearch: true,
-    onFilter: (value, record) => record.name.includes(value),
+    render: (text, record) => (
+      <div style={{ textAlign: "left" }}>
+        {record.key === 1 ? (
+          <>
+            <Tag color="blue" style={{ borderRadius: "10px" }}>
+              {record.Status[0]}
+            </Tag>
+            <div>{record.Status[1]}</div>
+            <div>{record.Status[2]}</div>
+            <div>{record.Status[3]}</div>
+          </>
+        ) : record.key === 2 ? (
+          <>
+            <Tag color="green" style={{ borderRadius: "10px" }}>
+              {record.Status[0]}
+            </Tag>
+            <div>{record.Status[1]}</div>
+            <div>{record.Status[2]}</div>
+            <div>{record.Status[3]}</div>
+          </>
+        ) : record.key === 3 ? (
+          <>
+            <div>{record.ID[0]}</div>
+            <div style={{ fontWeight: "bold" }}>{record.ID[1]}</div>
+            <div>{record.ID[2]}</div>
+            <div style={{ fontWeight: "bold" }}>{record.ID[3]}</div>
+            <FaMobileScreenButton />
+            <div style={{ fontWeight: "lighter" }}>{record.ID[4]}</div>
+          </>
+        ) : (
+          <div>{record.ID}</div>
+        )}
+      </div>
+    ),
+
     width: "20%",
   },
   {
     title: "Name",
-    dataIndex: "Name",
-    filters: [
-      {
-        text: "Joe",
-        value: "Joe",
-      },
-      {
-        text: "Category 1",
-        value: "Category 1",
-        children: [
-          {
-            text: "Yellow",
-            value: "Yellow",
-          },
-          {
-            text: "Pink",
-            value: "Pink",
-          },
-        ],
-      },
-      {
-        text: "Category 2",
-        value: "Category 2",
-        children: [
-          {
-            text: "Green",
-            value: "Green",
-          },
-          {
-            text: "Black",
-            value: "Black",
-          },
-        ],
-      },
-    ],
-    filterMode: "tree",
-    filterSearch: true,
-    onFilter: (value, record) => record.name.includes(value),
+    dataIndex: "Status",
     width: "20%",
   },
   {
-    title: "Contact",
-    dataIndex: "Contact",
-    filters: [
-      {
-        text: "Joe",
-        value: "Joe",
-      },
-      {
-        text: "Category 1",
-        value: "Category 1",
-        children: [
-          {
-            text: "Yellow",
-            value: "Yellow",
-          },
-          {
-            text: "Pink",
-            value: "Pink",
-          },
-        ],
-      },
-      {
-        text: "Category 2",
-        value: "Category 2",
-        children: [
-          {
-            text: "Green",
-            value: "Green",
-          },
-          {
-            text: "Black",
-            value: "Black",
-          },
-        ],
-      },
-    ],
-    filterMode: "tree",
-    filterSearch: true,
-    onFilter: (value, record) => record.name.includes(value),
+    title: "Name",
+    dataIndex: "Status",
     width: "20%",
   },
   {
-    title: "Address",
-    dataIndex: "Address",
-    filters: [
-      {
-        text: "Joe",
-        value: "Joe",
-      },
-      {
-        text: "Category 1",
-        value: "Category 1",
-        children: [
-          {
-            text: "Yellow",
-            value: "Yellow",
-          },
-          {
-            text: "Pink",
-            value: "Pink",
-          },
-        ],
-      },
-      {
-        text: "Category 2",
-        value: "Category 2",
-        children: [
-          {
-            text: "Green",
-            value: "Green",
-          },
-          {
-            text: "Black",
-            value: "Black",
-          },
-        ],
-      },
-    ],
-    filterMode: "tree",
-    filterSearch: true,
-    onFilter: (value, record) => record.name.includes(value),
-    width: "30%",
+    title: "Name",
+    dataIndex: "Status",
+    width: "20%",
   },
-  {
-    title: "Trip",
-    dataIndex: "Trip",
-  },
-  {
-    title: "Voucher",
-    dataIndex: "Voucher",
-  },
-  {
-    title: "Action",
-    dataIndex: "Action",
-  },
-  {
-    title: "Address",
-    dataIndex: "address",
-  },
+  // Kolom lainnya
 ];
+
 const data = [
   {
     key: 1,
-    ID: "User ID",
-    Status: 32,
-    Name: "afdal",
+    ID: [
+      "User ID",
+      "457",
+      "Employee ID",
+      "BAS-51243",
+      "Date created 9 Jun 2022",
+      "First app login on 22 Nov 2022",
+    ],
+    Status: ["Lead", "-", "Last Booking", "-"],
+    // Informasi lainnya
   },
   {
     key: 2,
-    ID: "User ID",
-    Status: 32,
-    Name: "afdal",
+    ID: ["User ID", "456", "Date created 9 Jun 2022"],
+    Status: ["Active", "1 Day Ago", "Last Booking", "-"],
+    // Informasi lainnya
   },
+  {
+    key: 3,
+    ID: [
+      "User ID",
+      "457",
+      "Employee ID",
+      "BAS-51243",
+      "Date created 9 Jun 2022",
+    ],
+    Status: 26,
+    // Informasi lainnya
+  },
+  {
+    key: 4,
+    ID: [
+      "User ID",
+      "457",
+      "Employee ID",
+      "BAS-51243",
+      "Date created 9 Jun 2022",
+    ],
+    Status: 26,
+    // Informasi lainnya
+  },
+  // Data lainnya
 ];
-// for (let i = 0; i < 46; i++) {
-//   data.push({
-//     key: i,
-//     ID: [`User ID`, "457", "Employee ID"],
-//     Status: 32,
-//     Name: "afdal",
-//     address: `London, Park Lane no. ${i}`,
-//   });
-// }
+
 const TableList = () => {
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
+
   const onSelectChange = (newSelectedRowKeys) => {
     console.log("selectedRowKeys changed: ", newSelectedRowKeys);
     setSelectedRowKeys(newSelectedRowKeys);
   };
+
   const rowSelection = {
     selectedRowKeys,
     onChange: onSelectChange,
     selections: [
-      Table.SELECTION_ALL,
-      Table.SELECTION_INVERT,
-      Table.SELECTION_NONE,
-      {
-        key: "odd",
-        text: "Select Odd Row",
-        onSelect: (changeableRowKeys) => {
-          let newSelectedRowKeys = [];
-          newSelectedRowKeys = changeableRowKeys.filter((_, index) => {
-            if (index % 2 !== 0) {
-              return false;
-            }
-            return true;
-          });
-          setSelectedRowKeys(newSelectedRowKeys);
-        },
-      },
-      {
-        key: "even",
-        text: "Select Even Row",
-        onSelect: (changeableRowKeys) => {
-          let newSelectedRowKeys = [];
-          newSelectedRowKeys = changeableRowKeys.filter((_, index) => {
-            if (index % 2 !== 0) {
-              return true;
-            }
-            return false;
-          });
-          setSelectedRowKeys(newSelectedRowKeys);
-        },
-      },
+      // Seleksi lainnya
     ],
   };
+
   return (
     <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
   );
 };
+
 export default TableList;

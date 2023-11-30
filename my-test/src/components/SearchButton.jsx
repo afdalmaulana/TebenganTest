@@ -14,6 +14,7 @@ export default function SearchButton() {
             borderRadius: "10px",
             marginLeft: "28px",
             marginTop: "22px",
+            marginBottom: "10px",
           }}
           suffix={
             <SearchOutlined
@@ -25,7 +26,13 @@ export default function SearchButton() {
         />
         <Button
           disabled
-          style={{ height: 40, width: 85, padding: 8, marginLeft: 460 }}
+          style={{
+            height: 40,
+            width: 85,
+            padding: 8,
+            marginBottom: "10px",
+            marginLeft: 460,
+          }}
         >
           Export
         </Button>
@@ -35,6 +42,7 @@ export default function SearchButton() {
             width: 120,
             padding: 8,
             marginLeft: 10,
+            marginBottom: "10px",
             background: "#e8f2ff",
             color: "#0766AD",
             fontWeight: "bold",

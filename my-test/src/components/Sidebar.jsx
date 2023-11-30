@@ -55,7 +55,7 @@ const Sidebar = () => {
         width: sidebarWidth,
         transition: "width 0.3s ease",
         backgroundColor: "white",
-        height: "100vh",
+        height: "920px",
       }}
     >
       <Button

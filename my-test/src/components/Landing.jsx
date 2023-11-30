@@ -18,6 +18,7 @@ const contentStyle = {
   minHeight: 120,
   //   lineHeight: "120px",
   color: "#fff",
+  height: "920px",
   backgroundColor: "#f6f6f6",
   paddingInline: 10,
 };
