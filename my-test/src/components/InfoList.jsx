@@ -16,7 +16,7 @@ export default function InfoList() {
             marginLeft: "28px",
           }}
         >
-          <Text style={{ fontWeight: "bold", fontSize: "22px" }}>456</Text>
+          <Text style={{ fontWeight: "bold", fontSize: "18px" }}>456</Text>
           <Text>Total Users</Text>
         </div>
         <div
@@ -29,7 +29,7 @@ export default function InfoList() {
             marginTop: "28px",
           }}
         >
-          <Text style={{ fontWeight: "bold", fontSize: "22px" }}>396</Text>
+          <Text style={{ fontWeight: "bold", fontSize: "18px" }}>396</Text>
           <Text>Active Users</Text>
         </div>
         <div
@@ -42,7 +42,7 @@ export default function InfoList() {
             marginTop: "28px",
           }}
         >
-          <Text style={{ fontWeight: "bold", fontSize: "22px" }}>123</Text>
+          <Text style={{ fontWeight: "bold", fontSize: "18px" }}>123</Text>
           <Text>Recent Users</Text>
         </div>
         <div
@@ -55,7 +55,7 @@ export default function InfoList() {
             marginTop: "28px",
           }}
         >
-          <Text style={{ fontWeight: "bold", fontSize: "22px" }}>60</Text>
+          <Text style={{ fontWeight: "bold", fontSize: "18px" }}>60</Text>
           <Text>Inactive Users</Text>
         </div>
         <div
@@ -68,7 +68,7 @@ export default function InfoList() {
             marginTop: "28px",
           }}
         >
-          <Text style={{ fontWeight: "bold", fontSize: "22px" }}>60</Text>
+          <Text style={{ fontWeight: "bold", fontSize: "18px" }}>60</Text>
           <Text>Lead Users</Text>
         </div>
         <div style={{ marginLeft: 320 }}>

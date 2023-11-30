@@ -41,11 +41,11 @@ const items = [
 
 const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
-  const [sidebarWidth, setSidebarWidth] = useState(300);
+  const [sidebarWidth, setSidebarWidth] = useState(200);
 
   const toggleCollapsed = () => {
     setCollapsed(!collapsed);
-    setSidebarWidth(collapsed ? 300 : 80);
+    setSidebarWidth(collapsed ? 200 : 80);
   };
 
   return (

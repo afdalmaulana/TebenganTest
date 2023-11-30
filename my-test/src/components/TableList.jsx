@@ -1,48 +1,18 @@
 import React, { useState } from "react";
 import { Table } from "antd";
-import IdField from "./Field/IdField";
-import StatusField from "./Field/StatusField";
-import NameField from "./Field/NameField";
+import IdField from "./DataDummy/Field/IdField";
+import StatusField from "./DataDummy/Field/StatusField";
+import NameField from "./DataDummy/Field/NameField";
+import { filtersConfig } from "./DataDummy/Filter/FilterConfig";
+import ContactField from "./DataDummy/Field/ContactField";
+import VoucherField from "./DataDummy/Field/VoucherField";
 
 const columns = [
   {
     title: "ID",
     dataIndex: "ID",
     render: (text, record) => <IdField record={record} />,
-    filters: [
-      {
-        text: "Joe",
-        value: "Joe",
-      },
-      {
-        text: "Category 1",
-        value: "Category 1",
-        children: [
-          {
-            text: "Yellow",
-            value: "Yellow",
-          },
-          {
-            text: "Pink",
-            value: "Pink",
-          },
-        ],
-      },
-      {
-        text: "Category 2",
-        value: "Category 2",
-        children: [
-          {
-            text: "Green",
-            value: "Green",
-          },
-          {
-            text: "Black",
-            value: "Black",
-          },
-        ],
-      },
-    ],
+    filters: filtersConfig,
     filterMode: "tree",
     filterSearch: true,
     onFilter: (value, record) => record.name.includes(value),
@@ -52,23 +22,35 @@ const columns = [
     title: "Status",
     dataIndex: "Status",
     render: (text, record) => <StatusField record={record} />,
-
+    filters: filtersConfig,
+    filterMode: "tree",
+    filterSearch: true,
     width: "15%",
   },
   {
     title: "Name",
     dataIndex: "Name",
     render: (text, record) => <NameField record={record} />,
-    width: "20%",
+    filters: filtersConfig,
+    filterMode: "tree",
+    filterSearch: true,
+    width: "15%",
   },
   {
     title: "Contact",
     dataIndex: "Contact",
+    render: (text, record) => <ContactField record={record} />,
+    filters: filtersConfig,
+    filterMode: "tree",
+    filterSearch: true,
     width: "20%",
   },
   {
     title: "Address",
     dataIndex: "Address",
+    filters: filtersConfig,
+    filterMode: "tree",
+    filterSearch: true,
     width: "20%",
   },
   {
@@ -79,6 +61,7 @@ const columns = [
   {
     title: "Voucher",
     dataIndex: "Voucher",
+    render: (text, record) => <VoucherField record={record} />,
     width: "20%",
   },
   {
@@ -108,11 +91,13 @@ const data = [
       "Departement",
       "Processing",
     ],
+    Contact: ["Mobile Number", "+6281235467890"],
   },
   {
     key: 2,
     ID: ["User ID", "456", "Date created 9 Jun 2022"],
     Status: ["Active", "1 day ago", "Last Booking 2 May 2022"],
+    Name: ["Kierra Calzoni", "Male"],
   },
   {
     key: 3,
@@ -124,6 +109,14 @@ const data = [
       "Date created 9 Jun 2022",
     ],
     Status: ["Recent", "56 days ago", "Last Booking 9 June 2022"],
+    Name: [
+      "Kristianto",
+      "Male",
+      "Company",
+      "Toyota Tsusho",
+      "Departement",
+      "Chemicals",
+    ],
   },
   {
     key: 4,
@@ -135,6 +128,14 @@ const data = [
       "Date created 9 Jun 2022",
     ],
     Status: ["Inactive", "125 days ago", "Last Booking 2 May 2022"],
+    Name: [
+      "Waluyo Brahmono Paulo Margono",
+      "Male",
+      "Company",
+      "SK Trans",
+      "Departement",
+      "Processing",
+    ],
   },
 ];
 
