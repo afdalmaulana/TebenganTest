@@ -1,4 +1,4 @@
-import { Button, Flex, Image, Typography } from "antd";
+import { Button, Flex, Typography } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 const { Text } = Typography;
 
@@ -8,10 +8,10 @@ export default function InfoList() {
       <Flex>
         <div
           style={{
-            borderLeft: "3px solid black", // Menambahkan nilai lengkap untuk borderLeft
+            borderLeft: "3px solid black",
             display: "flex",
             flexDirection: "column",
-            paddingLeft: "10px", // Memberi ruang antara teks dan border
+            paddingLeft: "10px",
             marginTop: "28px",
             marginLeft: "28px",
           }}

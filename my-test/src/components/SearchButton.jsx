@@ -1,4 +1,4 @@
-import { Button, Flex, Input, Typography } from "antd";
+import { Button, Flex, Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 // import Input from "antd/es/input/Search";
 

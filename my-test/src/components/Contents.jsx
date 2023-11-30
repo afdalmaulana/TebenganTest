@@ -1,11 +1,10 @@
-import { Typography } from "antd";
+// import { Typography } from "antd";
 import InfoList from "./InfoList";
-import Search from "antd/es/input/Search";
 import SearchButton from "./SearchButton";
 import TableList from "./TableList";
 
-const { Text } = Typography;
-const onSearch = (value, _e, info) => console.log(info?.source, value);
+// const { Text } = Typography;
+// const onSearch = (value, _e, info) => console.log(info?.source, value);
 export default function Contents() {
   return (
     <>
