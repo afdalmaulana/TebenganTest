@@ -1,4 +1,4 @@
-import { Button, Flex, Space } from "antd";
+import { Button, Space } from "antd";
 export default function TripField({ record }) {
   return (
     <>
@@ -10,8 +10,13 @@ export default function TripField({ record }) {
         ) : record.key === 2 ? (
           <>
             <Space direction="vertical" size={10}>
-              <div>{record.Trip[0]}</div>
-              <Button type="link" style={{ paddingLeft: "0px" }}>
+              <div style={{ lineHeight: "5px", fontSize: "12px" }}>
+                {record.Trip[0]}
+              </div>
+              <Button
+                type="link"
+                style={{ fontSize: "12px", paddingLeft: "0px", height: "5px" }}
+              >
                 View Details
               </Button>
             </Space>
@@ -19,8 +24,13 @@ export default function TripField({ record }) {
         ) : record.key === 3 ? (
           <>
             <Space direction="vertical" size={10}>
-              <div>{record.Trip[0]}</div>
-              <Button type="link" style={{ paddingLeft: "0px" }}>
+              <div style={{ lineHeight: "5px", fontSize: "12px" }}>
+                {record.Trip[0]}
+              </div>
+              <Button
+                type="link"
+                style={{ fontSize: "12px", paddingLeft: "0px", height: "5px" }}
+              >
                 View Details
               </Button>
             </Space>
@@ -28,8 +38,13 @@ export default function TripField({ record }) {
         ) : record.key === 4 ? (
           <>
             <Space direction="vertical" size={10}>
-              <div>{record.Trip[0]}</div>
-              <Button type="link" style={{ paddingLeft: "0px" }}>
+              <div style={{ lineHeight: "5px", fontSize: "12px" }}>
+                {record.Trip[0]}
+              </div>
+              <Button
+                type="link"
+                style={{ fontSize: "12px", paddingLeft: "0px", height: "5px" }}
+              >
                 View Details
               </Button>
             </Space>

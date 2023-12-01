@@ -13,25 +13,11 @@ const headerStyle = {
   backgroundColor: "#1c8af5",
 };
 const contentStyle = {
-  //   textAlign: "center",
   minHeight: 120,
-  //   lineHeight: "120px",
   color: "#fff",
-  height: "1100px",
   backgroundColor: "#f6f6f6",
   paddingInline: 10,
 };
-// const siderStyle = {
-//   textAlign: "center",
-//   lineHeight: "120px",
-//   color: "#fff",
-//   backgroundColor: "#3ba0e9",
-// };
-// const footerStyle = {
-//   textAlign: "center",
-//   color: "#fff",
-//   backgroundColor: "#7dbcea",
-// };
 const Landing = () => (
   <Space
     direction="vertical"

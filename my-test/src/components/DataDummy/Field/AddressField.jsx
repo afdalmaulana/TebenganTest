@@ -1,6 +1,4 @@
 import { Button, Flex, Space } from "antd";
-import { HiMiniComputerDesktop } from "react-icons/hi2";
-import { FaMobileScreenButton } from "react-icons/fa6";
 export default function AddressField({ record }) {
   return (
     <>
@@ -9,7 +7,12 @@ export default function AddressField({ record }) {
           <>
             <Space direction="vertical" size={10}>
               <Flex>
-                <div style={{ marginRight: "24px" }}>
+                <div
+                  style={{
+                    fontSize: "12px",
+                    marginRight: "24px",
+                  }}
+                >
                   <div style={{ color: "gray" }}>{record.Address[0]}</div>
                   <div style={{ fontWeight: "bold" }}>{record.Address[1]}</div>
                   <div>{record.Address[2]}</div>
@@ -19,7 +22,7 @@ export default function AddressField({ record }) {
                   <div>
                     <div
                       style={{
-                        marginTop: "10px",
+                        marginTop: "24px",
                         // lineHeight: "12px",
                         color: "gray",
                       }}
@@ -31,7 +34,7 @@ export default function AddressField({ record }) {
                     <div style={{ color: "gray" }}>{record.Address[4]}</div>
                   </div>
                 </div>
-                <div>
+                <div style={{ fontSize: "12px" }}>
                   <div style={{ color: "gray" }}>{record.Address[5]}</div>
                   <div style={{ fontWeight: "bold" }}>{record.Address[6]}</div>
                   <div>{record.Address[7]}</div>
@@ -41,7 +44,7 @@ export default function AddressField({ record }) {
                   <div>
                     <div
                       style={{
-                        marginTop: "10px",
+                        marginTop: "24px",
                         // lineHeight: "12px",
                         color: "gray",
                       }}
@@ -60,7 +63,12 @@ export default function AddressField({ record }) {
           <>
             <Space direction="vertical" size={10}>
               <Flex>
-                <div style={{ marginRight: "24px" }}>
+                <div
+                  style={{
+                    fontSize: "12px",
+                    marginRight: "24px",
+                  }}
+                >
                   <div style={{ color: "gray" }}>{record.Address[0]}</div>
                   <div style={{ fontWeight: "bold" }}>{record.Address[1]}</div>
                   <div>{record.Address[2]}</div>
@@ -70,7 +78,7 @@ export default function AddressField({ record }) {
                   <div>
                     <div
                       style={{
-                        marginTop: "10px",
+                        marginTop: "24px",
                         // lineHeight: "12px",
                         color: "gray",
                       }}
@@ -82,7 +90,7 @@ export default function AddressField({ record }) {
                     <div style={{ color: "gray" }}>{record.Address[4]}</div>
                   </div>
                 </div>
-                <div>
+                <div style={{ fontSize: "12px" }}>
                   <div style={{ color: "gray" }}>{record.Address[5]}</div>
                   <div style={{ fontWeight: "bold" }}>{record.Address[6]}</div>
                   <div>{record.Address[7]}</div>
@@ -92,7 +100,7 @@ export default function AddressField({ record }) {
                   <div>
                     <div
                       style={{
-                        marginTop: "10px",
+                        marginTop: "24px",
                         // lineHeight: "12px",
                         color: "gray",
                       }}
@@ -111,7 +119,12 @@ export default function AddressField({ record }) {
           <>
             <Space direction="vertical" size={10}>
               <Flex>
-                <div style={{ marginRight: "24px" }}>
+                <div
+                  style={{
+                    fontSize: "12px",
+                    marginRight: "24px",
+                  }}
+                >
                   <div style={{ color: "gray" }}>{record.Address[0]}</div>
                   <div style={{ fontWeight: "bold" }}>{record.Address[1]}</div>
                   <div>{record.Address[2]}</div>
@@ -121,7 +134,7 @@ export default function AddressField({ record }) {
                   <div>
                     <div
                       style={{
-                        marginTop: "10px",
+                        marginTop: "24px",
                         // lineHeight: "12px",
                         color: "gray",
                       }}
@@ -133,7 +146,7 @@ export default function AddressField({ record }) {
                     <div style={{ color: "gray" }}>{record.Address[4]}</div>
                   </div>
                 </div>
-                <div>
+                <div style={{ fontSize: "12px" }}>
                   <div style={{ color: "gray" }}>{record.Address[5]}</div>
                   <div style={{ fontWeight: "bold" }}>{record.Address[6]}</div>
                   <div>{record.Address[7]}</div>
@@ -143,7 +156,7 @@ export default function AddressField({ record }) {
                   <div>
                     <div
                       style={{
-                        marginTop: "10px",
+                        marginTop: "24px",
                         // lineHeight: "12px",
                         color: "gray",
                       }}
@@ -162,7 +175,12 @@ export default function AddressField({ record }) {
           <>
             <Space direction="vertical" size={10}>
               <Flex>
-                <div style={{ marginRight: "24px" }}>
+                <div
+                  style={{
+                    fontSize: "12px",
+                    marginRight: "24px",
+                  }}
+                >
                   <div style={{ color: "gray" }}>{record.Address[0]}</div>
                   <div style={{ fontWeight: "bold" }}>{record.Address[1]}</div>
                   <div>{record.Address[2]}</div>
@@ -184,7 +202,7 @@ export default function AddressField({ record }) {
                     <div style={{ color: "gray" }}>{record.Address[4]}</div>
                   </div>
                 </div>
-                <div>
+                <div style={{ fontSize: "12px" }}>
                   <div style={{ color: "gray" }}>{record.Address[5]}</div>
                   <div style={{ fontWeight: "bold" }}>{record.Address[6]}</div>
                   <div>{record.Address[7]}</div>

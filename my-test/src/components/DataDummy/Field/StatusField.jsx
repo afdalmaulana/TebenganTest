@@ -9,17 +9,21 @@ export default function StatusField({ record }) {
               {record.Status[0]}
             </Tag>
             <div>{record.Status[1]}</div>
-            <div style={{ color: "gray" }}>{record.Status[2]}</div>
-            <div>{record.Status[3]}</div>
+            <div style={{ color: "gray", fontSize: "12px" }}>
+              {record.Status[2]}
+            </div>
+            <div style={{ fontSize: "12px" }}>{record.Status[3]}</div>
           </>
         ) : record.key === 2 ? (
           <>
             <Tag color="green" style={{ borderRadius: "10px" }}>
               {record.Status[0]}
             </Tag>
-            <div>{record.Status[1]}</div>
-            <div style={{ color: "gray" }}>{record.Status[2]}</div>
-            <div>{record.Status[3]}</div>
+            <div style={{ fontSize: "12px" }}>{record.Status[1]}</div>
+            <div style={{ color: "gray", fontSize: "12px" }}>
+              {record.Status[2]}
+            </div>
+            <div style={{ fontSize: "12px" }}>{record.Status[3]}</div>
           </>
         ) : record.key === 3 ? (
           <>
@@ -32,9 +36,10 @@ export default function StatusField({ record }) {
             >
               {record.Status[0]}
             </Tag>
-            <div>{record.Status[1]}</div>
-            <div style={{ color: "gray" }}>{record.Status[2]}</div>
-            <div>{record.Status[3]}</div>
+            <div style={{ fontSize: "12px" }}>{record.Status[1]}</div>
+            <div style={{ color: "gray", fontSize: "12px" }}>
+              {record.Status[2]}
+            </div>
           </>
         ) : record.key === 4 ? (
           <>
@@ -48,9 +53,10 @@ export default function StatusField({ record }) {
               >
                 {record.Status[0]}
               </Tag>
-              <div>{record.Status[1]}</div>
-              <div style={{ color: "gray" }}>{record.Status[2]}</div>
-              <div>{record.Status[3]}</div>
+              <div style={{ fontSize: "12px" }}>{record.Status[1]}</div>
+              <div style={{ color: "gray", fontSize: "12px" }}>
+                {record.Status[2]}
+              </div>
             </Space>
           </>
         ) : (

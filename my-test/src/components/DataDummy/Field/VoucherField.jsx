@@ -1,60 +1,123 @@
-import { Space, Tag } from "antd";
+import { Button } from "antd";
+import { FaArrowsAltH } from "react-icons/fa";
+
 export default function VoucherField({ record }) {
   return (
     <>
       <div style={{ textAlign: "left", justifyItems: "center" }}>
         {record.key === 1 ? (
-          <>
-            <Tag color="blue" style={{ borderRadius: "10px" }}>
-              {record.Status[0]}
-            </Tag>
-            <div>{record.Status[1]}</div>
-            <div style={{ color: "gray" }}>{record.Status[2]}</div>
-            <div>{record.Status[3]}</div>
-          </>
+          <></>
         ) : record.key === 2 ? (
           <>
-            <Tag color="green" style={{ borderRadius: "10px" }}>
-              {record.Status[0]}
-            </Tag>
-            <div>{record.Status[1]}</div>
-            <div style={{ color: "gray" }}>{record.Status[2]}</div>
-            <div>{record.Status[3]}</div>
-          </>
-        ) : record.key === 3 ? (
-          <>
-            <Tag
-              style={{
-                borderRadius: "10px",
-                borderColor: "black",
-                color: "black",
-              }}
-            >
-              {record.Status[0]}
-            </Tag>
-            <div>{record.Status[1]}</div>
-            <div style={{ color: "gray" }}>{record.Status[2]}</div>
-            <div>{record.Status[3]}</div>
-          </>
-        ) : record.key === 4 ? (
-          <>
-            <Space direction="vertical" size={6}>
-              <Tag
+            <div style={{ fontSize: "12px" }}>
+              <div style={{ fontWeight: "bold" }}>{record.Voucher[0]}</div>
+              <div>{record.Voucher[1]}</div>
+              <div
                 style={{
-                  borderRadius: "10px",
-                  borderColor: "gray",
-                  color: "gray",
+                  display: "flex",
+                  alignItems: "center",
                 }}
               >
-                {record.Status[0]}
-              </Tag>
-              <div>{record.Status[1]}</div>
-              <div style={{ color: "gray" }}>{record.Status[2]}</div>
-              <div>{record.Status[3]}</div>
-            </Space>
+                <div>{record.Voucher[2]}</div>
+                <div
+                  style={{
+                    height: "5px",
+                    backgroundColor: "black",
+                    borderRadius: "50%",
+                    width: "5px",
+                    marginLeft: "5px",
+                    marginRight: "5px",
+                  }}
+                ></div>
+                <div>{record.Voucher[3]}</div>
+              </div>
+              <div>{record.Voucher[4]}</div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <div>{record.Voucher[5]}</div>
+                <FaArrowsAltH
+                  size={"1.3em"}
+                  color="black"
+                  style={{ marginLeft: "5px", marginRight: "5px" }}
+                />
+                <div>{record.Voucher[6]}</div>
+              </div>
+            </div>
+            <div style={{ fontSize: "12px", marginTop: "24px" }}>
+              <div>{record.Voucher[1]}</div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <div>{record.Voucher[7]}</div>
+                <div
+                  style={{
+                    height: "5px",
+                    backgroundColor: "black",
+                    borderRadius: "50%",
+                    width: "5px",
+                    marginLeft: "5px",
+                    marginRight: "5px",
+                  }}
+                ></div>
+                <div>{record.Voucher[8]}</div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <div>{record.Voucher[5]}</div>
+                <FaArrowsAltH
+                  size={"1.3em"}
+                  color="black"
+                  style={{ marginLeft: "5px", marginRight: "5px" }}
+                />
+                <div>{record.Voucher[6]}</div>
+              </div>
+              <div style={{ marginTop: "14px" }}>
+                <div style={{ fontWeight: "bold" }}>{record.Voucher[9]}</div>
+                <div>{record.Voucher[10]}</div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <div>{record.Voucher[5]}</div>
+                  <FaArrowsAltH
+                    size={"1.3em"}
+                    color="black"
+                    style={{ marginLeft: "5px", marginRight: "5px" }}
+                  />
+                  <div>{record.Voucher[6]}</div>
+                </div>
+                <Button
+                  type="link"
+                  style={{
+                    fontSize: "12px",
+                    paddingLeft: "0px",
+                    height: "5px",
+                  }}
+                >
+                  View Details
+                </Button>
+              </div>
+            </div>
           </>
+        ) : record.key === 3 ? (
+          <></>
+        ) : record.key === 4 ? (
+          <></>
         ) : (
-          <div>{record.Status}</div>
+          <div>{record.Voucher}</div>
         )}
       </div>
     </>

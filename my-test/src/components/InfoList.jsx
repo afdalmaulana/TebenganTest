@@ -5,7 +5,7 @@ const { Text } = Typography;
 export default function InfoList() {
   return (
     <>
-      <Flex>
+      <Flex style={{ position: "relative" }}>
         <div
           style={{
             borderLeft: "3px solid black",
@@ -71,7 +71,7 @@ export default function InfoList() {
           <Text style={{ fontWeight: "bold", fontSize: "18px" }}>60</Text>
           <Text>Lead Users</Text>
         </div>
-        <div style={{ marginLeft: 320 }}>
+        <div style={{ marginLeft: 320, position: "absolute", right: 0 }}>
           <Button
             style={{
               background: "#e8f2ff",

@@ -12,6 +12,7 @@ import { DataKeyOne } from "./DataDummy/Data/DataKeyOne";
 import { DataKeyTwo } from "./DataDummy/Data/DataKeyTwo";
 import { DataKeyFour } from "./DataDummy/Data/DataKeyFour";
 import TripField from "./DataDummy/Field/TripField";
+import ActionField from "./DataDummy/Field/ActionField";
 
 const columns = [
   {
@@ -31,7 +32,7 @@ const columns = [
     filters: filtersConfig,
     filterMode: "tree",
     filterSearch: true,
-    width: "15%",
+    width: "10%",
   },
   {
     title: "Name",
@@ -49,7 +50,7 @@ const columns = [
     filters: filtersConfig,
     filterMode: "tree",
     filterSearch: true,
-    width: "50px",
+    width: "10%",
   },
   {
     title: "Address",
@@ -64,18 +65,19 @@ const columns = [
     title: "Trip",
     dataIndex: "Trip",
     render: (text, record) => <TripField record={record} />,
-    width: "20%",
+    width: "5%",
   },
   {
     title: "Voucher",
     dataIndex: "Voucher",
     render: (text, record) => <VoucherField record={record} />,
-    width: "20%",
+    width: "40%",
   },
   {
     title: "Action",
     dataIndex: "Action",
-    width: "20%",
+    render: (text, record) => <ActionField record={record} />,
+    width: "10%",
   },
 ];
 
