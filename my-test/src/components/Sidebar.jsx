@@ -64,17 +64,8 @@ const Sidebar = () => {
         theme="light"
         inlineCollapsed={collapsed}
         items={items}
-      >
-        {/* {items.map((items) => (
-          <Menu.Item
-            key={items.key}
-            icon={items.icon}
-            style={{ fontSize: "10px" }}
-          >
-            {items.label}
-          </Menu.Item>
-        ))} */}
-      </Menu>
+        style={{ fontSize: "10px" }}
+      />
     </div>
   );
 };
