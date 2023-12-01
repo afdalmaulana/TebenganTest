@@ -1,0 +1,38 @@
+export const DataKeyOne = {
+    key: 1,
+    ID: [
+      "User ID",
+      "457",
+      "Employee ID",
+      "BAS-51243",
+      "Date created 9 Jun 2022",
+      "First app login on 22 Nov 2022",
+    ],
+    Status: ["Lead", "-", "Last Booking", "-"],
+    Name: [
+      "Ruben Tornado",
+      "Male",
+      "Company",
+      "SK Trans",
+      "Departement",
+      "Processing",
+    ],
+    Contact: [
+      "Mobile Number",
+      "+62 812 3546 7890",
+      "Email",
+      "rubentornado@email.com",
+    ],
+    Address: [
+      "Home",
+      "Master Pro",
+      "Kecamatan Serpong, Kota Tangerang Selatan",
+      "Depart at 08:00",
+      "Arrival at 19:00",
+      "Work",
+      "Grand Indonesia",
+      "Kecamatan Menteng, Kota Jakarta Pusat",
+      "Depart at 17:00",
+      "Arrival at 10:00",
+    ],
+}

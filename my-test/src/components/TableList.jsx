@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import { Table } from "antd";
+import { DataKeyThree } from "./DataDummy/Data/DataKeyThree";
 import IdField from "./DataDummy/Field/IdField";
 import StatusField from "./DataDummy/Field/StatusField";
 import NameField from "./DataDummy/Field/NameField";
 import { filtersConfig } from "./DataDummy/Filter/FilterConfig";
 import ContactField from "./DataDummy/Field/ContactField";
 import VoucherField from "./DataDummy/Field/VoucherField";
+import AddressField from "./DataDummy/Field/AddressField";
+import { DataKeyOne } from "./DataDummy/Data/DataKeyOne";
+import { DataKeyTwo } from "./DataDummy/Data/DataKeyTwo";
+import { DataKeyFour } from "./DataDummy/Data/DataKeyFour";
+import TripField from "./DataDummy/Field/TripField";
 
 const columns = [
   {
@@ -37,25 +43,27 @@ const columns = [
     width: "15%",
   },
   {
-    title: "Contact",
+    title: "Contacts",
     dataIndex: "Contact",
     render: (text, record) => <ContactField record={record} />,
     filters: filtersConfig,
     filterMode: "tree",
     filterSearch: true,
-    width: "20%",
+    width: "50px",
   },
   {
     title: "Address",
     dataIndex: "Address",
+    render: (text, record) => <AddressField record={record} />,
     filters: filtersConfig,
     filterMode: "tree",
     filterSearch: true,
-    width: "20%",
+    width: "45%",
   },
   {
     title: "Trip",
     dataIndex: "Trip",
+    render: (text, record) => <TripField record={record} />,
     width: "20%",
   },
   {
@@ -71,73 +79,7 @@ const columns = [
   },
 ];
 
-const data = [
-  {
-    key: 1,
-    ID: [
-      "User ID",
-      "457",
-      "Employee ID",
-      "BAS-51243",
-      "Date created 9 Jun 2022",
-      "First app login on 22 Nov 2022",
-    ],
-    Status: ["Lead", "-", "Last Booking", "-"],
-    Name: [
-      "Ruben Tornado",
-      "Male",
-      "Company",
-      "SK Trans",
-      "Departement",
-      "Processing",
-    ],
-    Contact: ["Mobile Number", "+6281235467890"],
-  },
-  {
-    key: 2,
-    ID: ["User ID", "456", "Date created 9 Jun 2022"],
-    Status: ["Active", "1 day ago", "Last Booking 2 May 2022"],
-    Name: ["Kierra Calzoni", "Male"],
-  },
-  {
-    key: 3,
-    ID: [
-      "User ID",
-      "457",
-      "Employee ID",
-      "BAS-51243",
-      "Date created 9 Jun 2022",
-    ],
-    Status: ["Recent", "56 days ago", "Last Booking 9 June 2022"],
-    Name: [
-      "Kristianto",
-      "Male",
-      "Company",
-      "Toyota Tsusho",
-      "Departement",
-      "Chemicals",
-    ],
-  },
-  {
-    key: 4,
-    ID: [
-      "User ID",
-      "457",
-      "Employee ID",
-      "BAS-51243",
-      "Date created 9 Jun 2022",
-    ],
-    Status: ["Inactive", "125 days ago", "Last Booking 2 May 2022"],
-    Name: [
-      "Waluyo Brahmono Paulo Margono",
-      "Male",
-      "Company",
-      "SK Trans",
-      "Departement",
-      "Processing",
-    ],
-  },
-];
+const data = [DataKeyOne, DataKeyTwo, DataKeyThree, DataKeyFour];
 
 const TableList = () => {
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
