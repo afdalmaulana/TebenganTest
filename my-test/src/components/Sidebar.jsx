@@ -64,7 +64,7 @@ const Sidebar = () => {
         theme="light"
         inlineCollapsed={collapsed}
         items={items}
-        style={{ fontSize: "10px" }}
+        style={{ fontSize: "10px", fontWeight: "bold" }}
       />
     </div>
   );

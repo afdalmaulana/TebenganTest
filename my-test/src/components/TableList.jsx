@@ -32,7 +32,7 @@ const columns = [
     filters: filtersConfig,
     filterMode: "tree",
     filterSearch: true,
-    width: "10%",
+    width: "15%",
   },
   {
     title: "Name",
@@ -44,7 +44,7 @@ const columns = [
     width: "15%",
   },
   {
-    title: "Contacts",
+    title: "Contact",
     dataIndex: "Contact",
     render: (text, record) => <ContactField record={record} />,
     filters: filtersConfig,
@@ -59,7 +59,7 @@ const columns = [
     filters: filtersConfig,
     filterMode: "tree",
     filterSearch: true,
-    width: "45%",
+    width: "50%",
   },
   {
     title: "Trip",

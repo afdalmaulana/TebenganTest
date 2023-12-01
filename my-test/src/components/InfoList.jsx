@@ -1,5 +1,5 @@
-import { Button, Flex, Typography } from "antd";
-import { PlusOutlined } from "@ant-design/icons";
+import { Flex, Typography } from "antd";
+import ButtonAddUser from "./ButtonAddUser";
 const { Text } = Typography;
 
 export default function InfoList() {
@@ -72,17 +72,7 @@ export default function InfoList() {
           <Text>Lead Users</Text>
         </div>
         <div style={{ marginLeft: 320, position: "absolute", right: 0 }}>
-          <Button
-            style={{
-              background: "#e8f2ff",
-              color: "#1c8af5",
-              fontWeight: "bold",
-            }}
-            ghost
-            icon={<PlusOutlined />}
-          >
-            Add New User
-          </Button>
+          <ButtonAddUser />
         </div>
       </Flex>
     </>
